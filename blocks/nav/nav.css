@@ -1,0 +1,11 @@
+.nav__links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    font-weight: 700;
+}
+
+.nav__link {
+    color: black
+}

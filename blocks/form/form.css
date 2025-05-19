@@ -1,0 +1,78 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form__form-control {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 50%;
+    justify-content: center;
+}
+
+.form__input {
+    border-radius: 20px;
+    padding: 0.5rem;
+    width: 50%;
+}
+
+
+.form__button,
+.form__button-delete,
+.form__button-complete {
+    border-radius: 20px;
+    border: none;
+    padding: 1rem;
+}
+
+.form__button:hover {
+    background-color: rgb(141, 154, 154);
+    color: white;
+}
+
+
+.form__list {
+    width: 30%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.form__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form__group-button {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+.form__button-complete {
+    background-color: green;
+    color: white;
+}
+
+.form__button-delete {
+    background-color: red;
+    color: white;
+}
+
+.form__button-delete:hover {
+    background-color: rgb(141, 154, 154);
+    color: white;
+}
+
+.form__button-complete:hover {
+    background-color: rgb(141, 154, 154);
+    color: white;
+}
