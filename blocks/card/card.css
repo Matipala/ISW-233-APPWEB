@@ -1,0 +1,28 @@
+.card {
+    width: 80%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0.4rem solid rgb(193, 183, 183);
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px;
+}
+
+.card__title {
+    margin: 0 0 1.5rem 0;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-left: 1rem;
+}
+
+.card__body__image {
+    background-color: rgb(193, 183, 183);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
