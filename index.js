@@ -9,6 +9,8 @@ const html = `<article class="card">
 </article>`;
 
 // 1. Seleccione el container
+const container = document.getElementById('container');
+
 
 // 2. cree una funciotn createCardComponent.
 /**
@@ -17,7 +19,32 @@ const html = `<article class="card">
  *
  * @return {HTMLElement}
  */
+function createCardComponent(title, body) {
 
+  const template = document.getElementById('card__template');
+
+  const element = template.content.cloneNode(true).firstElementChild;
+  const elementTitle = element.getElementsByTagName('h3')[0];
+  const elementBody = element.getElementsByTagName('section')[0];
+
+  elementTitle.textContent = title;
+  elementBody.textContent = body;
+
+  return element;
+}
 // 3. Cree un componente
+const card = createCardComponent('Fundamento 1', 'dame textos randoms aqui');
 
+getMovies().then(movieList => {
+  const movies = movieList.results;
+  const fragment = new DocumentFragment();
+
+  for (const movie of movies) {
+    const element = createCardComponent(movie.title, movie.overview);
+    fragment.appendChild(element);
+  }
+
+  container.appendChild(fragment);
+});
 // 4. Agrege este nuevo componente al container
+container.appendChild(card);

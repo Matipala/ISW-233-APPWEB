@@ -1,64 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./pages/index.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <title>Exercise DOM API</title>
-  </head>
-  <body>
-    <div class="page">
-      <header class="header">
-        <nav class="nav">
-          <ul class="nav__links">
-            <li><a class="nav__link" href="#recipes">Elemento 1</a></li>
-            <li>
-              <a class="nav__link" href="#reservation">Elemento 2</a>
+  <link rel="stylesheet" href="./pages/index.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@0;1&display=swap"
+    rel="stylesheet" />
+  <title>Exercise DOM API</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__links">
+          <li><a class="nav__link" href="#recipes">Elemento 1</a></li>
+          <li>
+            <a class="nav__link" href="#reservation">Elemento 2</a>
+          </li>
+          <li><a class="nav__link" href="#menu">Elemento 3</a></li>
+          <li><a class="nav__link" href="#contact">Elemento 4</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="container" class="container"></main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__social">
+          <h3 class="footer__social-heading">Redes sociales</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__social-link"><img src="./images/facebook_white.svg" alt="Logo Facebook"
+                  class="footer__social-icon" />
+                Facebook</a>
             </li>
-            <li><a class="nav__link" href="#menu">Elemento 3</a></li>
-            <li><a class="nav__link" href="#contact">Elemento 4</a></li>
+            <li class="footer__list-item">
+              <img src="./images/instagram_white.svg" alt="Logo Instagram" class="footer__social-icon" />
+              <a href="#" class="footer__social-link"> Instagram</a>
+            </li>
           </ul>
-        </nav>
-      </header>
-
-      <main id="container" class="container"></main>
-
-      <footer class="footer">
-        <div class="footer__content">
-          <div class="footer__social">
-            <h3 class="footer__social-heading">Redes sociales</h3>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a href="#" class="footer__social-link"
-                  ><img
-                    src="./images/facebook_white.svg"
-                    alt="Logo Facebook"
-                    class="footer__social-icon"
-                  />
-                  Facebook</a
-                >
-              </li>
-              <li class="footer__list-item">
-                <img
-                  src="./images/instagram_white.svg"
-                  alt="Logo Instagram"
-                  class="footer__social-icon"
-                />
-                <a href="#" class="footer__social-link"> Instagram</a>
-              </li>
-            </ul>
-          </div>
         </div>
-        <div class="footer__copyright">&copy; 2025 Your Name</div>
-      </footer>
+      </div>
+      <div class="footer__copyright">&copy; 2025 Your Name</div>
+    </footer>
+  </div>
+</body>
+<template id="card__template">
+  <article class="card">
+    <h3 class="card__title"></h3>
+    <div class="card__body">
+      <div class="card__body__image"></div>
+      <section class="card__body__content"></section>
     </div>
-  </body>
+  </article>
+</template>
+
+<template id="form__item-template">
+  <div class="form__item" id="form__item-">
+    <p class="form__item-content"></p>
+    <div class="form__group-button">
+      <button class="form__button-delete">Eliminar</button>
+      <button class="form__button-complete">Completar</button>
+    </div>
+  </div>
+</template>
+
+<script src="services/movieService.js" defer></script>
+<script src="services/formService.js" defer></script>
+<script src="index.js" defer></script>
+
 </html>
