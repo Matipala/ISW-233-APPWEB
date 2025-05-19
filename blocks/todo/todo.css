@@ -1,4 +1,4 @@
-.form {
+.todo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,7 +6,7 @@
 }
 
 
-.form__form-control {
+.todo__todo-control {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -14,28 +14,28 @@
     justify-content: center;
 }
 
-.form__input {
+.todo__input {
     border-radius: 20px;
     padding: 0.5rem;
     width: 50%;
 }
 
 
-.form__button,
-.form__button-delete,
-.form__button-complete {
+.todo__button,
+.todo__button-delete,
+.todo__button-complete {
     border-radius: 20px;
     border: none;
     padding: 1rem;
 }
 
-.form__button:hover {
+.todo__button:hover {
     background-color: rgb(141, 154, 154);
     color: white;
 }
 
 
-.form__list {
+.todo__list {
     width: 30%;
     margin-top: 2rem;
     display: flex;
@@ -44,35 +44,35 @@
 
 }
 
-.form__item {
+.todo__item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.form__group-button {
+.todo__group-button {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
 
-.form__button-complete {
+.todo__button-complete {
     background-color: green;
     color: white;
 }
 
-.form__button-delete {
+.todo__button-delete {
     background-color: red;
     color: white;
 }
 
-.form__button-delete:hover {
+.todo__button-delete:hover {
     background-color: rgb(141, 154, 154);
     color: white;
 }
 
-.form__button-complete:hover {
+.todo__button-complete:hover {
     background-color: rgb(141, 154, 154);
     color: white;
 }
